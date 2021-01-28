@@ -63,7 +63,7 @@ const bison = {
         coins: 15
     }, {
         id: 'fight',
-        description: 'fight!',
+        description: 'fight time!',
         result: `
             As he says "Now, face the mighty Bison" you decide to hit him with a haduken. He counters back with a hell's warp, which you were able to dodge & hit him with a Shoryuken knocking him out. He drops 55 coins which you proceed to take & continue to finish your morning jog
         `,
