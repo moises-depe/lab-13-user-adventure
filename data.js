@@ -88,7 +88,7 @@ const trophies = {
         left: '5%'
     },
     prerequisites: ['zangief', 'bison'],
-    image: 'trophies-chests.png',
+    image: 'trophies.png',
     description: `
         
     `,
