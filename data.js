@@ -2,10 +2,10 @@ export const zangief = {
     id: 'zangief',
     title: 'The red cyclone!',
     map: {
-        top: '89%',
-        left: '44%'
+        top: '50%',
+        left: '50%'
     },
-    image: 'zangief.jpg',
+    image: 'zangief.png',
     description: `
         As your going on a casual stroll down the street you come across zangief the red cyclone, which is not to happy to see you after losing a fight to ken. He asks you to give him all your coins at one!! if not "You WIll pay" what do you do next??
     `,
@@ -49,7 +49,7 @@ const bison = {
         top: '17%',
         left: '37%'
     },
-    image: 'bison.jpg',
+    image: 'bison.png',
     description: `
         You end up going for a jog near a rural valley, as you come across a few men layed on the floor! you continue to run minding your business as you then come across the infamous Captain Bison which does not seem to be trilled to see you as you helped chun li escape his capture last time you guys crossed paths. As he prepares to fight, you have a only two chooses Fight or Flight". What do you do next?
     `,
@@ -82,7 +82,7 @@ const bison = {
 
 const trophies = {
     id: 'trophies',
-    title: 'A coinsen trophies',
+    title: ' Trophies',
     map: {
         top: '31%',
         left: '5%'

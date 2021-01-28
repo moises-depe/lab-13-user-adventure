@@ -5,8 +5,10 @@ const h1 = document.querySelector('h1');
 const p = document.querySelector('p');
 const img = document.querySelector('section img');
 const form = document.querySelector('form');
+const resultsSpan = document.querySelector('#results-span');
+const returnToMap = document.querySelector('#return-to-map');
 
-
+// grabs the id of the adventure from the url
 
 const params = new URLSearchParams(window.location.search);
 
@@ -41,7 +43,7 @@ for (let choice of fighters.choices) {
 const button = document.createElement('button');
 
 button.textContent = 'Submit';
-
+// on submit, it calculates the users new stats [hp & coins]
 form.appendChild(button);
 
 form.addEventListener('submit', (e) => {
@@ -55,14 +57,20 @@ form.addEventListener('submit', (e) => {
     const choice = findById(fighters.choices, selectionId);
     const user = JSON.parse(localStorage.getItem('USER'));
 
+    // uses the selectionId to the the property dynamically
     user.hp += choice.hp;
     user.coins += choice.coins;
+    resultsSpan.textContent = choice.result;
 
     user.completed[fighterId] = true;
 
-
+    // places the new stats in the local storage 
     localStorage.setItem('USER', JSON.stringify(user));
 
+});
+
+// returns users to the map page upon click
+returnToMap.addEventListener('click', () => {
     window.location = '../map';
 });
 

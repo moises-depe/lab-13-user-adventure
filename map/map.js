@@ -26,7 +26,7 @@ for (let adventure of fighter) {
     const a = document.createElement('a');
 
     a.textContent = adventure.title;
-    a.href = `./adventure/?id=${adventure.id}`;
+    a.href = `../adventure/?id=${adventure.id}`;
 
 
     li.append(a);
