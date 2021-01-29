@@ -5,16 +5,20 @@ import { aliveCoinMessages, deadCoinMessages } from './messages.js';
 // goes & grabs the user from the local storage
 const user = JSON.parse(localStorage.getItem('USER'));
 
-const storylineDisplay = document.getElementById('story-display');
+const storylineDisplay = document.getElementById('story-line-display');
+
+const hpCoinResults = document.getElementById('hp-coins-results');
 
 const hpResults = hpScore(user.hp);
 
 const coinResults = coinScore(user.coins);
 
+hpCoinResults.textContent = hpResults;
+
 const healthMessage = {
     dead: 'you are dead',
-    frail: 'you weak, but atleast you survived',
-    healthy: 'you survived, You ARE now a LIVING LEGEND!',
+    injured: 'you weak, but atleast you survived',
+    healthy: 'you survived, You ARE now considered to be a LIVING LEGEND!',
 };
 
 const hpMessage = healthMessage[hpResults];
@@ -40,4 +44,12 @@ const story = `After your adventures,
 
 storylineDisplay.textContent = story;
 
+const returnButton = document.getElementById('return-button');
+
+returnButton.textContent = 'restart game';
+
+returnButton.addEventListener('click', () => {
+
+    window.location = '../index.html';
+});
 
