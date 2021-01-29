@@ -2,12 +2,12 @@ export const zangief = {
     id: 'zangief',
     title: 'The red cyclone!',
     map: {
-        top: '50%',
-        left: '50%'
+        top: '100%',
+        left: '100%'
     },
     image: 'zangief.png',
     description: `
-        As your going on a casual stroll down the street you come across zangief the red cyclone, which is not to happy to see you after losing a fight to ken. He asks you to give him all your coins at one!! if not "You WIll pay" what do you do next??
+       youve choose to go against zangief the red cyclone, which is not to happy to see you after losing a fight to ken. He asks you to give him all your coins at once!! if not "You WIll pay" what do you do next??
     `,
     choices: [{
         id: 'negotiate',
@@ -21,7 +21,7 @@ export const zangief = {
         coins: 50
     }, {
         id: 'fight',
-        description: 'fight or flight!',
+        description: 'fight!',
         result: `
             Knowing your one of the toughest fighters in the world, you decide to take on the red cyclone. You throw a upper cut & tried to follow up with a hadouken, As suddenly zangief goes into a rage & grabs you following up with a spinnning piledriver. You are serverly hurt, he took 50 hp away.
         `,
@@ -63,7 +63,7 @@ const bison = {
         coins: 15
     }, {
         id: 'fight',
-        description: 'fight time!',
+        description: 'fight!',
         result: `
             As he says "Now, face the mighty Bison" you decide to hit him with a haduken. He counters back with a hell's warp, which you were able to dodge & hit him with a Shoryuken knocking him out. He drops 55 coins which you proceed to take & continue to finish your morning jog
         `,
@@ -82,13 +82,13 @@ const bison = {
 
 const trophies = {
     id: 'trophies',
-    title: ' Trophies',
+    title: ' trophies',
     map: {
         top: '31%',
         left: '5%'
     },
     prerequisites: ['zangief', 'bison'],
-    image: 'trophies.png',
+    image: 'trophies.jpeg',
     description: `
         
     `,

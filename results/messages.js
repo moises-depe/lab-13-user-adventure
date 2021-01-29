@@ -1,5 +1,5 @@
 export const aliveCoinMessages = {
-    poor: 'you live as a poor beggar',
+    poor: 'unfortunately your not goin go thave that mansion on the hills',
     modest: 'some say you decided to take the little money you had & are going to NYC & become an actor',
     rich: 'you and your whole family live in small castle in luxury',
 };

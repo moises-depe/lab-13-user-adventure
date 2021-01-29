@@ -43,7 +43,7 @@ for (let choice of fighters.choices) {
 const button = document.createElement('button');
 
 button.textContent = 'Submit';
-// on submit, it calculates the users new stats [hp & coins]
+// on submit, it calculates the usersnew stats [hp & coins]
 form.appendChild(button);
 
 form.addEventListener('submit', (e) => {
